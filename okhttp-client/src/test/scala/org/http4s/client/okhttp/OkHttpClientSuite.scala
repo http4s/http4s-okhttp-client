@@ -20,7 +20,7 @@ package okhttp
 
 import cats.effect.IO
 
-class OkHttpClientSpec extends ClientRouteTestBattery("OkHttp") {
+class OkHttpClientSuite extends ClientRouteTestBattery("OkHttp") {
   def clientResource =
     OkHttpBuilder.withDefaultClient[IO](testBlocker).map(_.create)
 }
