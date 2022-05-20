@@ -24,9 +24,9 @@ lazy val okHttpClient = project
     description := "okhttp implementation for http4s clients",
     startYear := Some(2018),
     libraryDependencies ++= Seq(
-      "org.http4s" %% "http4s-core" % http4sVersion,
+      "org.http4s" %% "http4s-client" % http4sVersion,
       "com.squareup.okhttp3" % "okhttp" % okhttpVersion,
       "com.squareup.okio" % "okio" % okioVersion,
-      "org.http4s" %% "http4s-client-testkit" % http4sVersion % Test,
+      "org.http4s" %% "http4s-client-testkit" % "0.23.11-473-e7e64cb-SNAPSHOT" % Test,
     ),
   )
