@@ -12,7 +12,7 @@ lazy val root = project.in(file(".")).aggregate(okHttpClient).enablePlugins(NoPu
 
 val http4sVersion = "0.23.11"
 val okhttpVersion = "4.9.3"
-val okioVersion = "2.10.0"
+val okioVersion = "3.1.0"
 
 ThisBuild / resolvers +=
   "s01 snapshots".at("https://s01.oss.sonatype.org/content/repositories/snapshots/")
