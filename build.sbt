@@ -10,7 +10,7 @@ ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(okHttpClient).enablePlugins(NoPublishPlugin)
 
-val http4sVersion = "0.23.12"
+val http4sVersion = "0.23.14"
 val okhttpVersion = "4.9.3"
 val okioVersion = "2.10.0"
 
