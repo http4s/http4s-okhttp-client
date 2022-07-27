@@ -27,6 +27,6 @@ lazy val okHttpClient = project
       "org.http4s" %% "http4s-client" % http4sVersion,
       "com.squareup.okhttp3" % "okhttp" % okhttpVersion,
       "com.squareup.okio" % "okio" % okioVersion,
-      "org.http4s" %% "http4s-client-testkit" % "0.23.14" % Test,
+      "org.http4s" %% "http4s-client-testkit" % http4sVersion % Test,
     ),
   )
