@@ -5,12 +5,12 @@ ThisBuild / developers := List(
 )
 
 val Scala213 = "2.13.8"
-ThisBuild / crossScalaVersions := Seq("2.12.16", Scala213, "3.1.3")
+ThisBuild / crossScalaVersions := Seq("2.12.16", Scala213, "3.2.0")
 ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(okHttpClient).enablePlugins(NoPublishPlugin)
 
-val http4sVersion = "0.23.14"
+val http4sVersion = "0.23.16"
 val okhttpVersion = "4.9.3"
 val okioVersion = "2.10.0"
 
@@ -27,6 +27,6 @@ lazy val okHttpClient = project
       "org.http4s" %% "http4s-client" % http4sVersion,
       "com.squareup.okhttp3" % "okhttp" % okhttpVersion,
       "com.squareup.okio" % "okio" % okioVersion,
-      "org.http4s" %% "http4s-client-testkit" % "0.23.13" % Test,
+      "org.http4s" %% "http4s-client-testkit" % http4sVersion % Test,
     ),
   )
